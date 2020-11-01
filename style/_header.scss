@@ -1,0 +1,138 @@
+#cabecalho {
+    font-size: 14px;
+    background-color: transparent;
+    .conteiner {
+        padding: 0px;
+        width: 100%;
+        max-width: none !important;
+        .row-fluid {
+            margin: 0 auto;
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            .span3 {
+                .logo a {
+                    margin-top: -25px;
+                    height: 150px;
+                    width: 100%;
+                }
+            }
+            .conteudo-topo.span9 {
+                width: 65%;
+                font-size: 16px;
+                margin: 0;
+                .acoes-conta.borda-alpha li {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+
+.busca.borda-alpha {
+    background-color: none;
+    border: none;
+    padding: 0;
+    #form-buscar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        #auto-complete {
+            width: 100%;
+            background-color: #303030;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            textarea {
+                color: gray;
+                font-family: 'Exo', sans-serif;
+            }
+        }
+        .botao.botao-busca {
+            height: 35px;
+            border: none;
+            right: none;
+            position: none;
+            top: none;
+        }
+    }
+}
+
+.superior.row-fluid {
+    .span4 {
+        .acoes-conta.borda-alpha li i {
+            width: 30px;
+            height: 30px;
+            padding: 6px;
+            border-radius: 50px;
+        }
+    }
+}
+
+.logo.cor-secundaria .titulo {
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
+}
+
+.logo-centro .row-fluid {
+    padding-top: 15px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.row-fluid {
+    padding-top: 0px;
+}
+
+.barra-inicial {
+    background-color: #303030;
+}
+
+.menu.superior {
+    background-color: #303030;
+}
+
+.menu.superior ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu.superior strong {
+    color: white;
+    transition: all .5s;
+}
+
+.menu.superior strong:hover {
+    color: gray;
+    font-size: 17px;
+}
+
+.menu.superior .nivel-um>li {
+    border: none;
+}
+
+.menu .nivel-dois a {
+    color: white;
+}
+
+.menu .nivel-dois a:hover {
+    color: gray;
+}
+
+.busca {
+    padding: 10px;
+    background-color: #303030;
+}
+
+.busca input {
+    border-radius: 0;
+}
+
+.busca .botao-busca {
+    background-image: none;
+}

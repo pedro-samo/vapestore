@@ -1,0 +1,31 @@
+.listagem.com-caixa .listagem-item {
+    box-shadow: 0px;
+    border: none;
+    transition: all .3s;
+}
+
+.listagem.com-caixa .listagem-item:hover {
+    border: solid 1px #303030;
+    box-shadow: 0px;
+}
+
+.info-produto a {
+    text-align: center;
+    min-height: auto;
+}
+
+.listagem .listagem-item .nome-produto {
+    font-weight: 600;
+}
+
+.listagem .info-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preco-produto.destaque-parcela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

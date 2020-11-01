@@ -1,0 +1,29 @@
+    .barra-inicial.fundo-secundario {
+        background-color: #1d1d1d;
+        height: 50px;
+        font-size: 14px;
+        .row-fluid {
+            padding-top: 12px;
+        }
+    }
+    
+    .lista-redes .icon-instagram {
+        background: none !important;
+        color: white;
+        font-size: 22px !important;
+        transition: all .3s;
+        &:hover {
+            color: gray !important;
+            font-size: 24px;
+        }
+    }
+    
+    .canais-contato li {
+        transition: all .3s;
+        &:hover {
+            color: gray;
+            cursor: pointer;
+            font-size: 15px;
+            text-decoration: none;
+        }
+    }

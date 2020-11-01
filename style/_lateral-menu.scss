@@ -1,0 +1,23 @@
+
+
+.menu .nivel-dois,
+.menu .nivel-tres,
+.menu.lateral .nivel-um>li{
+    background-color: #303030;
+}
+
+.menu .nivel-dois,
+.menu .nivel-tres,
+.menu.lateral .nivel-um>li>:hover{
+    background-color: #4b4b4b;
+}
+
+.menu.lateral .nivel-um > li > a{
+    background-color: transparent;
+}
+
+
+
+.menu.lateral .nivel-um>li strong {
+    color: white;
+}
