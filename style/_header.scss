@@ -11,7 +11,7 @@
             padding: 0;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1150px;
             .span3 {
                 .logo a {
                     margin-top: -25px;
@@ -20,7 +20,7 @@
                 }
             }
             .span4 {
-                width: 50%;
+                width: 35%;
                 li {
                     margin-right: 0px;
                 }
@@ -28,7 +28,7 @@
             .conteudo-topo.span9 {
                 width: 80%;
                 font-size: 16px;
-                margin: 0;
+                margin: 0 auto;
                 .acoes-conta.borda-alpha li {
                     padding: 5px;
                 }
@@ -38,7 +38,7 @@
 }
 
 .superior.row-fluid {
-    margin-bottom: 20px;
+    margin-bottom: 10px !important;
     .span4 {
         .acoes-conta.borda-alpha li {
             margin: 0;
@@ -47,6 +47,7 @@
                 height: 30px;
                 padding: 6px;
                 border-radius: 50px;
+                margin-right: 0;
             }
         }
     }
@@ -82,9 +83,9 @@
             }
         }
     }
-    .carrinho.vazio {
+    .carrinho {
         border-radius: 50px;
-        width: 75%;
+        width: 92%;
         i {
             border-radius: 50px;
         }
