@@ -19,8 +19,14 @@
                     width: 100%;
                 }
             }
+            .span4 {
+                width: 50%;
+                li {
+                    margin-right: 0px;
+                }
+            }
             .conteudo-topo.span9 {
-                width: 65%;
+                width: 80%;
                 font-size: 16px;
                 margin: 0;
                 .acoes-conta.borda-alpha li {
@@ -31,41 +37,55 @@
     }
 }
 
-.busca.borda-alpha {
-    background-color: none;
-    border: none;
-    padding: 0;
-    #form-buscar {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        #auto-complete {
-            width: 100%;
-            background-color: #303030;
-            height: 40px;
-            border-radius: 5px;
-            border: none;
-            textarea {
-                color: gray;
-                font-family: 'Exo', sans-serif;
+.superior.row-fluid {
+    margin-bottom: 20px;
+    .span4 {
+        .acoes-conta.borda-alpha li {
+            margin: 0;
+            i {
+                width: 30px;
+                height: 30px;
+                padding: 6px;
+                border-radius: 50px;
             }
-        }
-        .botao.botao-busca {
-            height: 35px;
-            border: none;
-            right: none;
-            position: none;
-            top: none;
         }
     }
 }
 
-.superior.row-fluid {
-    .span4 {
-        .acoes-conta.borda-alpha li i {
-            width: 30px;
-            height: 30px;
-            padding: 6px;
+.inferior.row-fluid {
+    .busca.borda-alpha {
+        background-color: none;
+        border: none;
+        padding: 0;
+        border-radius: 15px;
+        #form-buscar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            #auto-complete {
+                width: 100%;
+                background-color: #303030;
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                textarea {
+                    color: gray;
+                    font-family: 'Exo', sans-serif;
+                }
+            }
+            .botao.botao-busca {
+                height: 35px;
+                border: none;
+                right: none;
+                position: none;
+                top: none;
+            }
+        }
+    }
+    .carrinho.vazio {
+        border-radius: 50px;
+        width: 75%;
+        i {
             border-radius: 50px;
         }
     }
