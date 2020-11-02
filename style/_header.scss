@@ -69,26 +69,25 @@
                 height: 40px;
                 border-radius: 5px;
                 border: none;
-                textarea {
-                    color: gray;
-                    font-family: 'Exo', sans-serif;
-                }
+                color: gray !important;
+                font-family: 'Exo', sans-serif;
             }
-            .botao.botao-busca {
-                height: 35px;
-                border: none;
-                right: none;
-                position: none;
-                top: none;
-            }
+        }
+        .botao.botao-busca {
+            height: 35px;
+            border: none;
+            right: none;
+            position: none;
+            top: none;
         }
     }
-    .carrinho {
+}
+
+.carrinho {
+    border-radius: 50px;
+    width: 92%;
+    i {
         border-radius: 50px;
-        width: 92%;
-        i {
-            border-radius: 50px;
-        }
     }
 }
 
