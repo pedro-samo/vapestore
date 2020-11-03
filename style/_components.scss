@@ -15,3 +15,61 @@
     width: 52px;
     height: 52px;
 }
+
+.modalContainerAge {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .3);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modalAge {
+        background: white;
+        width: 40%;
+        min-width: 200px;
+        padding: 25px 5px;
+        border: solid 3px #303030;
+        text-align: center;
+        font-family: 'Exo', sans-serif;
+        font-size: 20px;
+        color: #303030;
+        .modalTitle {
+            text-transform: uppercase;
+            font-size: 30px;
+            margin: 10px 0 20px;
+            font-weight: 700;
+            color: #1f1f1f;
+        }
+        .modalSubtitle {
+            margin: 10px;
+            color: #242424;
+            font-size: 26px;
+        }
+        .modalSubtitle2 {
+            line-height: 36px;
+            color: #242424;
+            margin: 10px;
+        }
+        .modalConfirmar {
+            padding: 10px 30px;
+            font-family: 'Exo', sans-serif;
+            margin: 10px 30px;
+            border: 2px solid #303030;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                background-color: #303030;
+                color: white;
+            }
+        }
+    }
+}
+
+.modalContainerAge.fechar {
+    display: none;
+}
