@@ -1,0 +1,14 @@
+.conteiner-principal {
+    #corpo {
+        margin-top: 190px;
+        .produto .nome-produto {
+            font-size: 22px;
+            line-height: normal;
+            font-weight: bold;
+            margin: 0;
+        }
+        .produto .conteiner-imagem>div {
+            z-index: 97;
+        }
+    }
+}

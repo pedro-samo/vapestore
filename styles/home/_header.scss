@@ -6,7 +6,7 @@
     top: 0;
     margin-top: 50px;
     z-index: 98;
-    transition: all .5s;
+    transition: all .2s;
     .conteiner {
         padding: 0px;
         width: 100%;
@@ -24,7 +24,7 @@
                     height: 150px;
                     width: 100%;
                     img {
-                        transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
+                        transition: all .2s;
                     }
                 }
             }
