@@ -1,0 +1,33 @@
+#listagemProdutos {
+    .span3 {
+        .listagem-item {
+            border: none;
+            box-shadow: none;
+            transition: all .3s;
+            padding: 0;
+            &:hover {
+                outline: 1px solid rgba(0, 0, 0, 0.3);
+            }
+        }
+        .info-produto a {
+            text-align: center;
+            min-height: auto;
+        }
+    }
+}
+
+.listagem .listagem-item .nome-produto {
+    font-weight: 600;
+}
+
+.listagem .info-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preco-produto.destaque-parcela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -2,5 +2,7 @@
   "name": "VapeStore",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/pedro-samo/vapestore.git",
+  "author": "Pedro Morais <pedro.s.morais@gmail.com>"
 }
