@@ -3,6 +3,8 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const { watch } = require('gulp');
 
 function sassCompilation() {
   return gulp
@@ -22,8 +24,9 @@ function gulpJs() {
   .src('js/home/*.js')
   .pipe(concat('VapeStore-home.js'))
   .pipe(babel({
-    presets: ['env']
+    presets: ['@babel/env']
   }))
+  .pipe(uglify())
   .pipe(gulp.dest('build/'))
 }
 
@@ -34,4 +37,6 @@ function gulpWatch() {
   gulp.watch('js/**/*.js', gulpJs)
 }
 
-gulp.task('default', gulpWatch);
+gulp.task('watch', gulpWatch)
+
+gulp.task('default', gulp.parallel('watch', 'sass', 'mainjs'));

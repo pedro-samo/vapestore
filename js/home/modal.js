@@ -4,6 +4,6 @@ function modalEntrar() {
 }
 
 function modalFechar() {
-    window.location.href = "http://www.google.com.br/";   
+    window.location.href = "http://www.google.com.br/";
 }
 }
