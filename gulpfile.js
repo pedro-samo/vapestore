@@ -4,7 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const { watch } = require('gulp');
+
 
 function sassCompilation() {
   return gulp
@@ -17,8 +17,6 @@ function sassCompilation() {
   .pipe(gulp.dest('build/'))
 }
 
-gulp.task('sass', sassCompilation);
-
 function gulpJs() {
   return gulp
   .src('js/home/*.js')
@@ -30,13 +28,13 @@ function gulpJs() {
   .pipe(gulp.dest('build/'))
 }
 
-gulp.task('mainjs', gulpJs);
-
 function gulpWatch() {
   gulp.watch('styles/**/*.scss', sassCompilation)
   gulp.watch('js/**/*.js', gulpJs)
 }
 
-gulp.task('watch', gulpWatch)
+exports.sassCompilation = sassCompilation;
+exports.gulpJs = gulpJs;
+exports.gulpWatch = gulpWatch;
 
-gulp.task('default', gulp.parallel('watch', 'sass', 'mainjs'));
+exports.default = gulp.parallel(gulpWatch, sassCompilation, gulpJs);
