@@ -4,5 +4,20 @@
   "main": "index.js",
   "license": "MIT",
   "repository": "https://github.com/pedro-samo/vapestore.git",
-  "author": "Pedro Morais <pedro.s.morais@gmail.com>"
+  "author": "Pedro Morais <pedro.s.morais@gmail.com>",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "gulp-babel": "^8.0.0"
+  }
 }
