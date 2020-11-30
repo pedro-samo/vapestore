@@ -1,5 +1,7 @@
 #listagemProdutos {
     .span3 {
+        margin-left: 0 !important;
+        width: 25% !important;
         .listagem-item {
             border: none;
             box-shadow: none;
@@ -18,6 +20,7 @@
 
 .listagem .listagem-item .nome-produto {
     font-weight: 600;
+    font-size: 16px !important;
 }
 
 .listagem .info-produto {
